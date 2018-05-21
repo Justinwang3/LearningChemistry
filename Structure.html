@@ -1,0 +1,109 @@
+<!doctype html>
+<html>
+	<head>
+	<style>
+		#title{
+			text-decoration: none;
+		}
+		#hImg{
+			max-width: 500px;
+			max-hieght: 500px;
+		}
+		.lessons:hover{
+			text-decoration: none;
+		}
+		.lessonImg{
+			max-width: 350px;
+			max-height: 300px;
+		}
+		.quizes:hover{
+			text-decoration: none;
+		}
+	</style>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+	</head>
+	<body class="bg-primary">
+		<header class="bg-primary jumbotron">
+			<a href="Structure.html" id="title"><h1 align="center" class="display-1 text-white">Chemistry</h1>
+		</header>
+			<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+			  <ul class="navbar-nav">
+				<li class="nav-item active">
+				  <a class="nav-link" href="Structure.html">Home</a>
+				</li>
+				<li class="nav-item dropdown">
+				  <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+					Lessons
+				  </a>
+				  <div class="dropdown-menu">
+					<a class="dropdown-item" href="lesson1.html">Lesson 1</a>
+					<a class="dropdown-item" href="lesson2.html">Lesson 2</a>
+					<a class="dropdown-item" href="lesson3.html">Lesson 3</a>
+				  </div>
+				</li>
+				<li class="nav-item dropdown">
+				  <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+					Quizes
+				  </a>
+				  <div class="dropdown-menu">
+					<a class="dropdown-item" href="quiz1.html">Quiz 1</a>
+					<a class="dropdown-item" href="quiz2.html">Quiz 2</a>
+					<a class="dropdown-item" href="quiz3.html">Quiz 3</a>
+				  </div>
+				</li>
+				<li class="nav-item">
+				  <a class="nav-link" href="#">About</a>
+				</li>
+			  </ul>
+			</nav>
+		<div class="row mt-4">
+			<div class="col-sm-7 shadow p-3 mb-5 bg-white mr-3 ml-5">
+				<h3 align="center">Let's Have Some Chemistry!</h3>
+					<p>Chemistry is the branch of science that deals with the identification of the 
+					substances of which matter is composed; the investigation of their properties and 
+					the ways in which they interact, combine, and change; and the use of these processes 
+					to form new substances. Chemistry is a difficult subject to comprehend and apply to 
+					modern day problems or conflicts.</p>
+					<p>This website will allow you to better understand the complex subject of chemistry
+					through various interactive lessons and quizes. There will also be a variety of videos 
+					to aid your learning experience in a quick and simple manner furthering your knowledge of the subject.</p>
+					
+			</div>
+			<div class="col-sm-4 shadow p-3 mb-5 bg-white">
+				<img src="Chemistry.jpg" id="hImg">
+			</div>
+			<div class="col-sm-3 shadow p-3 mb-5 bg-white mr-5 ml-5">
+				<a href="lesson1.html" class="lessons"><h3>Lesson 1</h3></a>
+				<h4>Entropy and Equilibrium</h4>
+				<img src="entropy.jpg" class="lessonImg">
+			</div>
+			<div class="col-sm-3 shadow p-3 mb-5 bg-white mr-5 ml-5">
+				<a href="lesson2.html" class="lessons"><h3>Lesson 2</h3></a>
+				<h4>Acids, Bases, and Salts</h4>
+				<img src="abs.jpg" class="lessonImg">
+			</div>
+			<div class="col-sm-3 shadow p-3 mb-5 bg-white mr-5 ml-5">
+				<a href="lesson3.html" class="lessons"><h3>Lesson 3</h3></a>
+				<h4>Stoichiometry</h4>
+				<img src="stoichiometry.jpg" class="lessonImg">
+			</div>
+			<div class="col-sm-3 shadow p-3 mb-5 bg-white mr-5 ml-5">
+				<a href="quiz1.html" class="quizes"><h3>Quiz 1</h3></a>
+				<h4>Test Your Knowledge On <br>Entropy and Equilibrium</h4>
+			</div>
+			<div class="col-sm-3 shadow p-3 mb-5 bg-white mr-5 ml-5">
+				<a href="quiz2.html" class="quizes"><h3>Quiz 2</h3></a>
+				<h4>Test Your Knowledge On <br>Acids, Bases, and Salts</h4>
+			</div>
+			<div class="col-sm-3 shadow p-3 mb-5 bg-white mr-5 ml-5">
+				<a href="quiz3.html" class="quizes"><h3>Quiz 3</h3></a>
+				<h4>Test Your Knowledge On <br>Stoichiometry</h4>
+			</div>
+		</div>
+	</body>
+</html>
