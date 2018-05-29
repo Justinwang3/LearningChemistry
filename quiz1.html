@@ -34,6 +34,11 @@
 		#quiz1{
 			margin-left: 200px
 		}
+		#submit{
+			font-size: 50px;
+			padding-right: 20px;
+			padding-left: 20px;
+		}
 	</style>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -44,11 +49,12 @@
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/2.3.0/mustache.min.js"></script>
 		<script type="text/template" id="qQuestion">
 				<div class='question'>
-					<h3> {{q}} </h3>
-					<p> {{c1}} </p>
-					<p> {{c2}} </p>
-					<p> {{c3}} </p>
-					<p> {{c4}} </p>
+					<h4 class="pt-4"> {{q}} </h4>
+					<p class="p-2"> {{c1}} </p>
+					<p class="p-2"> {{c2}} </p>
+					<p class="p-2"> {{c3}} </p>
+					<p class="p-2"> {{c4}} </p>
+					<input type="text" id="{{key}}" placeholder="Enter Choice" class="p-2">
 				</div>
 		</script>
 		<script>
@@ -60,7 +66,7 @@
 					})
 				}
 				function quiz(){
-					var build="";
+					var build = "";
 					var qQuestion = document.getElementById("qQuestion").innerHTML;
 					var output = document.getElementById("1quiz");
 					for(var key in data.quiz1){
@@ -68,7 +74,21 @@
 					}
 					output.innerHTML = build;
 				}
-			
+				function grade(){
+					var anskey = "";
+					var ans = "";
+					for(var key in data.quiz1){
+						anskey = data.quiz1[ans]
+						ans = document.getElementById(key).value;
+						if(anskey == ans){
+							
+						}
+						else{
+							
+						}
+					}
+				}
+					
 			
 		</script>
 	</head>
@@ -108,8 +128,10 @@
 			  </ul>
 			 </nav>
 		<div class="row" id="quiz1">
-			<div class="col-sm-11 shadow p-3 mb-5 bg-white" id="1quiz">
-				
+			<div class="col-sm-11 shadow p-3 mb-5 bg-white">
+				<div id="1quiz">
+				</div>
+				<button class="text-white bg-primary mt-5 p-2 pr-4 pl-4" onclick="grade()" id="submit">Submit</button>
 			</div>
 		</div>
 	</body>
