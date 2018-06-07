@@ -39,6 +39,9 @@
 			padding-right: 20px;
 			padding-left: 20px;
 		}
+		#grade{ 
+        		font-size: 30px;
+        	}
 	</style>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -77,16 +80,20 @@
 				function grade(){
 					var anskey = "";
 					var ans = "";
-					for(var key in data.quiz3){
-						anskey = data.quiz3[ans]
+                    			var grade = document.getElementById("grade");
+                    			var correct = 0;
+                    			var wrong = 0;
+					for(var key in data.quiz1){
+						anskey = data.quiz1[ans]
 						ans = document.getElementById(key).value;
 						if(anskey == ans){
-							
+							correct++;
 						}
 						else{
-							
+							wrong++;
 						}
 					}
+                			grade.innerHTML = "Correct: " + correct + "<br>" + "Incorrect: " + wrong;
 				}
 					
 			
@@ -133,6 +140,8 @@
 				</div>
 				<button class="text-white bg-primary mt-5 p-2 pr-4 pl-4" onclick="grade()" id="submit">Submit</button>
 			</div>
+			<div class="col-sm-11 shadow p-3 mb-5 bg-white" id="grade">
+            		</div>
 		</div>
 	</body>
 </html>
